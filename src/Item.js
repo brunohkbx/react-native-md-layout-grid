@@ -9,4 +9,8 @@ const Item = ({ children, style }) => {
   )
 };
 
+Item.defaultProps = {
+  wide: 12,
+};
+
 export default Item;

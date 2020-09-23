@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Grid from './src/Grid';
@@ -8,13 +7,14 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Grid spacing={3}>
-        <Item>
-          <View style={{backgroundColor: 'yellow'}}>
-            <Text>A</Text>
-          </View>
+        <Item wide={6} style={{backgroundColor: 'red'}}>
+          <Text>Wide=6</Text>
+        </Item>
+        <Item wide={6} style={{backgroundColor: 'yellow'}}>
+          <Text>Wide=6</Text>
         </Item>
         <Item style={{backgroundColor: 'yellow'}}>
-          <Text>B</Text>
+          <Text>Wide=12 default</Text>
         </Item>
       </Grid>
     </View>
